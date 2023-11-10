@@ -1,0 +1,43 @@
+<ui:composition
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+
+    <div class="navbar">
+            <div class="navbar-content margin-center max-width p-flex-row p-justify-between p-align-center">
+
+                <div class="p-justify-between p-align-center flex gap-7">
+                        <h:graphicImage name="iconheader.svg" alt="Logo" />
+                        <h:outputLabel
+                                styleClass="brand-name"
+                                value="Untitled" />
+                </div>
+                <div class="main-menu">
+                        <p:menubar >
+                            <p:menuitem value="Home" url="#" />
+                            <p:menuitem value="Dashboard" url="#" />
+                            <p:menuitem value="Features" url="#" />
+                            <p:menuitem value="Pricing" url="#" />
+                        </p:menubar>
+                </div>
+                <div class="card mobile-menu">
+                    <p:commandButton id= "dyna-button"  type="button" icon="pi pi-bars"/>
+                    <p:menu overlay="true" trigger="dyna-button" my="left top" at="left bottom">
+                        <p:menuitem value="Home" url="#" />
+                        <p:menuitem value="Dashboard" url="#" />
+                        <p:menuitem value="Features" url="#" />
+                        <p:menuitem value="Pricing" url="#" />
+                    </p:menu>
+                </div>
+
+                <div>
+                        <p:commandButton styleClass="rounded-button ui-button-secondary register-button"  value="Register" />
+                        <p:commandButton styleClass="ui-button-flat header-login-button" value="Login" />
+                        <p:commandButton icon="pi pi-moon" styleClass="rounded-button ui-button-flat header-icon-button" />
+
+                </div>
+            </div>
+    </div>
+
+</ui:composition>

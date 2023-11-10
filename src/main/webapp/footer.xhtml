@@ -1,0 +1,157 @@
+<ui:composition
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+
+        <footer>
+        <div class="desktop-footer-content">
+
+            <div class="max-width margin-center gap-14 footer-content">
+
+                <div class="flex p-flex-column footer-content-left gap-14">
+                    <h:outputLabel styleClass="" value="👋"/>
+                    <h:outputLabel styleClass="footer-description" value=" Vitae congue mauris rhoncus aenean vel elit scelerisque."/>
+                </div>
+
+
+                <div class="flex p-flex-row gap-28 ">
+                    <div class="flex p-flex-column gap-14 ">
+                        <h:outputLabel styleClass="footer-content-title no-gap" value="Company"/>
+                        <p:tieredMenu styleClass="footer-menu-item">
+
+                                <p:menuitem value="About Us"/>
+                                <p:menuitem value="News" />
+                                <p:menuitem value="Investor Relationships"/>
+                                <p:menuitem value="Careers"/>
+                                <p:menuitem value="Media Kit"/>
+
+                        </p:tieredMenu>
+
+                    </div>
+                    <div class="flex p-flex-column gap-14">
+                        <h:outputLabel styleClass="footer-content-title" value="Resources"/>
+                        <p:tieredMenu styleClass="footer-menu-item">
+
+                            <p:menuitem value="Get Started" />
+                            <p:menuitem value="Learn" />
+                            <p:menuitem value="Case Studies"/>
+
+                        </p:tieredMenu>
+
+                    </div>
+                    <div class="flex p-flex-column gap-14 ">
+                        <h:outputLabel styleClass="footer-content-title" value="Community"/>
+                        <p:tieredMenu styleClass="footer-menu-item">
+
+                            <p:menuitem value="Discord" />
+                            <p:menuitem value="Events" />
+                            <p:menuitem value="Faq"/>
+                            <p:menuitem value="Blog"/>
+
+                        </p:tieredMenu>
+
+                    </div>
+                    <div class="flex p-flex-column gap-14 ">
+                        <h:outputLabel styleClass="footer-content-title" value="Legal"/>
+                        <p:tieredMenu styleClass="footer-menu-item">
+
+                            <p:menuitem value="Brand Policy" />
+                            <p:menuitem value="Privacy Policy" />
+                            <p:menuitem value="Terms of Service" />
+
+                        </p:tieredMenu>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mobile-footer-content">
+            <div class="max-width margin-center gap-14">
+
+                <div class="flex p-flex-row gap-14">
+                    <h:outputLabel styleClass="" value="👋"/>
+                    <h:outputLabel styleClass="footer-description" value=" Vitae congue mauris rhoncus aenean vel elit scelerisque."/>
+                </div>
+            </div>
+                <div class="flex">
+                    <div class="p-col-6 max-width ">
+
+                            <h:outputLabel styleClass="footer-content-title no-gap" value="Company"/>
+                            <p:tieredMenu styleClass="footer-menu-item no-gap">
+
+                                <p:menuitem value="About Us"/>
+                                <p:menuitem value="News" />
+                                <p:menuitem value="Investor Relationships"/>
+                                <p:menuitem value="Careers"/>
+                                <p:menuitem value="Media Kit"/>
+
+                            </p:tieredMenu>
+
+
+                    </div>
+                    <div class="p-col-6">
+                        <div class="box">
+                            <h:outputLabel styleClass="footer-content-title" value="Resources"/>
+                            <p:tieredMenu styleClass="footer-menu-item">
+
+                                <p:menuitem value="Get Started" />
+                                <p:menuitem value="Learn" />
+                                <p:menuitem value="Case Studies"/>
+
+                            </p:tieredMenu>
+                        </div>
+                    </div>
+                    <div class="p-col-6">
+                        <div class="box">
+                            <h:outputLabel styleClass="footer-content-title" value="Community"/>
+                            <p:tieredMenu styleClass="footer-menu-item">
+
+                                <p:menuitem value="Discord" />
+                                <p:menuitem value="Events" />
+                                <p:menuitem value="Faq"/>
+                                <p:menuitem value="Blog"/>
+
+                            </p:tieredMenu></div>
+                    </div>
+                    <div class="p-col-6">
+                        <div class="box">
+                            <h:outputLabel styleClass="footer-content-title" value="Legal"/>
+                            <p:tieredMenu styleClass="footer-menu-item">
+
+                                <p:menuitem value="Brand Policy" />
+                                <p:menuitem value="Privacy Policy" />
+                                <p:menuitem value="Terms of Service" />
+
+                            </p:tieredMenu>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+
+        <div class="footer-copyright">
+            <!-- Copyright Footer -->
+            <div class="flex max-width margin-center p-justify-between p-align-center">
+
+                <div class="p-justify-between p-align-center flex gap-7">
+                    <h:graphicImage name="iconfooter.svg" alt="Logo" />
+                    <h:outputLabel value="Untitled" styleClass="footer-logo-content"/>
+                </div>
+
+                <div>
+                    <h:outputLabel styleClass="copyright" value="© Your Organization - 202X"/>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+</ui:composition>

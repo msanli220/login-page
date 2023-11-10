@@ -1,0 +1,76 @@
+<ui:composition
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+    <h:panelGroup layout="block">
+        <p:card id="login-container">
+                    <p:card id="login-card" class="gap-28 p-flex-column p-align-start p-justify-start">
+                     <h:graphicImage name="iconLoginForm.svg" styleClass="spacing-text" />
+                                <div class="flex p-flex-column gap-14">
+
+                                        <h:outputLabel
+                                                styleClass="content-label"
+                                                value="Login" />
+
+
+                                        <h:outputLabel
+                                                styleClass="content-sm-label"
+                                                value="Sapien eget mi proin sed libero enim sed faucibus." />
+
+
+                                    <div class="flex p-flex-column gap-7">
+                                        <h:outputLabel
+                                                styleClass="input-label"
+                                                for="email"
+                                                value="Email" />
+
+                                        <span class="ui-input-icon-left">
+                                            <i class="pi pi-inbox" />
+                                             <p:inputText
+                                                     id="email"
+                                                     styleClass="form-input"
+                                                     value=""
+                                                     required="true"
+                                                     label="email"
+                                                     placeholder="Email"    />
+                                        </span>
+                                    </div>
+                                    <div class="flex p-flex-column gap-7">
+
+                                        <h:outputLabel
+                                                styleClass="input-label"
+                                                for="password"
+                                                value="Password" />
+
+                                        <span class="ui-input-icon-left">
+                                            <i class="pi pi-lock" />
+                                            <p:password
+                                                    id="password"
+                                                    value="Password"
+                                                    styleClass="form-input"
+                                                    required="true"
+                                                    label="password"
+                                                    placeholder="Password"/>
+                                        </span>
+                                    </div>
+                                    <div class="flex p-justify-between">
+                                        <p:selectBooleanCheckbox styleClass="remember" value="#{selectBooleanView.value1}" itemLabel="Remember me"/>
+                                        <p:commandButton styleClass="ui-button-flat forget-pass" value="Forget Password" />
+
+                                    </div>
+                                            <p:commandButton
+                                                    id="login"
+                                                    value="Login"
+                                                    action="#{userLoginView.login}"
+                                                    styleClass="login-form-button"
+                                            />
+                                     </div>
+
+                    </p:card>
+
+        </p:card>
+    </h:panelGroup>
+
+
+</ui:composition>
